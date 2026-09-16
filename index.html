@@ -194,26 +194,35 @@
 </head>
 <body>
 
+<!-- Pantalla del sobre -->
 <div class="envelope-screen" id="envelopeScreen" onclick="openLetter()">
   <div class="envelope"></div>
   <div class="envelope-text">Toca para abrir 💕</div>
 </div>
 
+<!-- Estrellas -->
 <div class="stars" id="starsBg"></div>
+
+<!-- Corazones flotantes -->
 <div class="hearts-bg" id="heartsBg"></div>
+
+<!-- Confetti -->
 <canvas id="confetti-canvas"></canvas>
 
+<!-- Control de música -->
 <button class="music-toggle" id="musicToggle" onclick="toggleMusic()">🎵</button>
 <audio id="bgMusic" loop>
   <source src="musica.mp3" type="audio/mpeg">
 </audio>
 
+<!-- Contenido principal -->
 <div class="container">
   <h1 class="title">Feliz Cumpleaños</h1>
   <p class="subtitle">✨ Mi amor, mi todo ✨</p>
 
+  <!-- Contador -->
   <div class="counter-box">
-    <div class="counter-title">Juntos desde aquel día 💕</div>
+    <div class="counter-title">Juntos desde el 18 de marzo de 2025 💕</div>
     <div class="counter-grid">
       <div class="counter-item"><span class="counter-num" id="years">0</span><span class="counter-label">Años</span></div>
       <div class="counter-item"><span class="counter-num" id="days">0</span><span class="counter-label">Días</span></div>
@@ -222,10 +231,12 @@
     </div>
   </div>
 
+  <!-- Globo -->
   <div class="balloon-container">
     <div class="balloon"><span class="balloon-text">¡Feliz día!</span></div>
   </div>
 
+  <!-- Carta -->
   <div class="letter">
     <div class="greeting">Mi amor,</div>
     <p>Hoy es un día muy especial porque celebramos <span class="highlight">tu existencia</span>, y no puedo estar más feliz de poder compartirlo contigo.</p>
@@ -235,24 +246,26 @@
     <div class="signature">Te amo con todo mi corazón 💖</div>
   </div>
 
+  <!-- Galería de fotos -->
   <h2 class="gallery-title">Nuestros momentos 📸</h2>
   <div class="gallery">
-    <div class="polaroid" onclick="openPhoto('foto1.jpg')"><img src="foto1.jpg" alt="Foto 1" loading="lazy"><div class="polaroid-caption">Mi persona favorita</div></div>
-    <div class="polaroid" onclick="openPhoto('foto2.jpg')"><img src="foto2.jpg" alt="Foto 2" loading="lazy"><div class="polaroid-caption">Nuestra sonrisa</div></div>
-    <div class="polaroid" onclick="openPhoto('foto3.jpg')"><img src="foto3.jpg" alt="Foto 3" loading="lazy"><div class="polaroid-caption">Momentos únicos</div></div>
-    <div class="polaroid" onclick="openPhoto('foto4.jpg')"><img src="foto4.jpg" alt="Foto 4" loading="lazy"><div class="polaroid-caption">Siempre juntos</div></div>
-    <div class="polaroid" onclick="openPhoto('foto5.jpg')"><img src="foto5.jpg" alt="Foto 5" loading="lazy"><div class="polaroid-caption">Mi felicidad</div></div>
-    <div class="polaroid" onclick="openPhoto('foto6.jpg')"><img src="foto6.jpg" alt="Foto 6" loading="lazy"><div class="polaroid-caption">Te amo 💕</div></div>
+    <div class="polaroid" onclick="openPhoto('foto1.jpg')"><img src="foto1.jpg" alt="Foto 1" loading="lazy"><div class="polaroid-caption">Donde todo comenzó 💫</div></div>
+    <div class="polaroid" onclick="openPhoto('foto2.jpg')"><img src="foto2.jpg" alt="Foto 2" loading="lazy"><div class="polaroid-caption">Tu sonrisa mi debilidad 💕</div></div>
+    <div class="polaroid" onclick="openPhoto('foto3.jpg')"><img src="foto3.jpg" alt="Foto 3" loading="lazy"><div class="polaroid-caption">Mi lugar favorito 🥰</div></div>
+    <div class="polaroid" onclick="openPhoto('foto4.jpg')"><img src="foto4.jpg" alt="Foto 4" loading="lazy"><div class="polaroid-caption">Contigo todo es mejor ✨</div></div>
+    <div class="polaroid" onclick="openPhoto('foto5.jpg')"><img src="foto5.jpg" alt="Foto 5" loading="lazy"><div class="polaroid-caption">Mi felicidad completa 💖</div></div>
+    <div class="polaroid" onclick="openPhoto('foto6.jpg')"><img src="foto6.jpg" alt="Foto 6" loading="lazy"><div class="polaroid-caption">Te amo infinito 💗</div></div>
   </div>
 
+  <!-- Timeline -->
   <h2 class="timeline-title">Nuestra historia 💗</h2>
   <div class="timeline">
     <div class="timeline-item">
-      <div class="timeline-date">El día que nos conocimos</div>
-      <div class="timeline-text">Quién diría que ese momento cambiaría mi vida para siempre.</div>
+      <div class="timeline-date">18 de marzo de 2025</div>
+      <div class="timeline-text">El día que empezó todo. Quién diría que ese momento cambiaría mi vida para siempre.</div>
     </div>
     <div class="timeline-item">
-      <div class="timeline-date">Nuestra primera cita</div>
+      <div class="timeline-date">Nuestros primeros días</div>
       <div class="timeline-text">Los nervios, las risas, y las ganas de verte otra vez.</div>
     </div>
     <div class="timeline-item">
@@ -260,11 +273,12 @@
       <div class="timeline-text">El momento más sincero de mi vida.</div>
     </div>
     <div class="timeline-item">
-      <div class="timeline-date">Hoy, tu cumpleaños</div>
+      <div class="timeline-date">Hoy, tu cumpleaños 🎂</div>
       <div class="timeline-text">Celebrando que existes, y que estás en mi vida.</div>
     </div>
   </div>
 
+  <!-- Razones -->
   <h2 class="reasons-title">Razones por las que te amo</h2>
   <div class="reason-card"><span class="reason-icon">😊</span><span class="reason-text">Por tu sonrisa que ilumina todo a tu alrededor.</span></div>
   <div class="reason-card"><span class="reason-icon">💗</span><span class="reason-text">Por lo linda que eres conmigo cada día.</span></div>
@@ -276,10 +290,12 @@
   <button class="final-btn" onclick="showSurprise()">🎁 Haz clic aquí mi amor</button>
 </div>
 
+<!-- Modal foto ampliada -->
 <div class="photo-modal" id="photoModal" onclick="closePhoto()">
   <img id="photoModalImg" src="" alt="Foto">
 </div>
 
+<!-- Modal sorpresa -->
 <div class="modal" id="surpriseModal">
   <div class="modal-content">
     <div class="modal-heart">💖</div>
@@ -291,9 +307,10 @@
 </div>
 
 <script>
-  // ======== ¡CAMBIA ESTA FECHA POR LA DE USTEDES! ========
-  const fechaInicio = new Date('2022-01-01T00:00:00');
+  // ============ FECHA DE INICIO ============
+  const fechaInicio = new Date('2025-03-18T00:00:00');
 
+  // ============ CONTADOR ============
   function updateCounter() {
     const ahora = new Date();
     const diff = ahora - fechaInicio;
@@ -310,7 +327,7 @@
   updateCounter();
   setInterval(updateCounter, 60000);
 
-  // Estrellas
+  // ============ ESTRELLAS ============
   const starsBg = document.getElementById('starsBg');
   for (let i = 0; i < 80; i++) {
     const star = document.createElement('div');
@@ -321,7 +338,7 @@
     starsBg.appendChild(star);
   }
 
-  // Corazones flotantes
+  // ============ CORAZONES FLOTANTES ============
   const heartsBg = document.getElementById('heartsBg');
   const heartEmojis = ['❤️', '💕', '💖', '💗', '💓', '💝', '🌸', '✨'];
   function createHeart() {
@@ -338,7 +355,7 @@
   setInterval(createHeart, 400);
   for (let i = 0; i < 15; i++) setTimeout(createHeart, i * 200);
 
-  // Sparkles
+  // ============ SPARKLES ============
   function createSparkle() {
     const sparkle = document.createElement('div');
     sparkle.className = 'sparkle';
@@ -350,16 +367,16 @@
   }
   setInterval(createSparkle, 300);
 
-  // Abrir carta
+  // ============ MÚSICA ============
   const bgMusic = document.getElementById('bgMusic');
   const musicToggle = document.getElementById('musicToggle');
   let musicPlaying = false;
 
+  // ============ ABRIR CARTA ============
   function openLetter() {
     document.getElementById('envelopeScreen').classList.add('hidden');
     setTimeout(() => { document.getElementById('envelopeScreen').style.display = 'none'; }, 1000);
     
-    // Reproducir música
     bgMusic.volume = 0.5;
     bgMusic.play().then(() => {
       musicPlaying = true;
@@ -384,7 +401,7 @@
     }
   }
 
-  // Foto modal
+  // ============ FOTO MODAL ============
   function openPhoto(src) {
     document.getElementById('photoModalImg').src = src;
     document.getElementById('photoModal').classList.add('show');
@@ -393,7 +410,7 @@
     document.getElementById('photoModal').classList.remove('show');
   }
 
-  // Sorpresa
+  // ============ SORPRESA ============
   function showSurprise() {
     document.getElementById('surpriseModal').classList.add('show');
     burstConfetti();
@@ -403,7 +420,7 @@
     document.getElementById('surpriseModal').classList.remove('show');
   }
 
-  // Confetti
+  // ============ CONFETTI ============
   const canvas = document.getElementById('confetti-canvas');
   const ctx = canvas.getContext('2d');
   let confettiPieces = [];
@@ -465,11 +482,4 @@
       ctx.fillStyle = p.color;
       if (p.shape === 'circle') { ctx.beginPath(); ctx.arc(0, 0, p.size / 2, 0, Math.PI * 2); ctx.fill(); }
       else { ctx.fillRect(-p.size / 2, -p.size / 4, p.size, p.size / 2); }
-      ctx.restore();
-    });
-    if (confettiPieces.length > 0) animationId = requestAnimationFrame(animateConfetti);
-    else { animationId = null; ctx.clearRect(0, 0, canvas.width, canvas.height); }
-  }
-</script>
-</body>
-</html>
+      ctx
