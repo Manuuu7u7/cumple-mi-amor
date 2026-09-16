@@ -482,4 +482,11 @@
       ctx.fillStyle = p.color;
       if (p.shape === 'circle') { ctx.beginPath(); ctx.arc(0, 0, p.size / 2, 0, Math.PI * 2); ctx.fill(); }
       else { ctx.fillRect(-p.size / 2, -p.size / 4, p.size, p.size / 2); }
-      ctx
+      ctx.restore();
+    });
+    if (confettiPieces.length > 0) animationId = requestAnimationFrame(animateConfetti);
+    else { animationId = null; ctx.clearRect(0, 0, canvas.width, canvas.height); }
+  }
+</script>
+</body>
+</html>
